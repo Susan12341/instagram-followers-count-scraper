@@ -1,0 +1,33 @@
+time.sleep(delay)
+
+    def get(
+        self,
+        url: str,
+        headers: Optional[Dict[str, str]] = None,
+        allow_redirects: bool = True,
+    ) -> Optional[Response]:
+        hdrs = {
+            "User-Agent": self.user_agent,
+            "Accept": headers.get("Accept", "*/*") if headers else "*/*",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Cache-Control": "no-cache",
+            "Pragma": "no-cache",
+        }
+        if headers:
+            hdrs.update(headers)
+
+        self._sleep_jitter()
+
+        try:
+            resp = self.session.get(
+                url,
+                headers=hdrs,
+                timeout=self.timeout,
+                proxies=self.proxies,
+                allow_redirects=allow_redirects,
+            )
+            logger.debug("GET %s -> %s", url, resp.status_code)
+            return resp
+        except requests.RequestException as e:
+            logger.warning("GET %s failed: %s", url, e)
+            return None
