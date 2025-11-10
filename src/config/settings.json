@@ -1,0 +1,7 @@
+{
+  "request_timeout": 15,
+  "max_retries": 2,
+  "sleep_between_requests": 0.75,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
+  "verify_ssl": true
+}
