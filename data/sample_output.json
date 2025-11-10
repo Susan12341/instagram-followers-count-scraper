@@ -1,0 +1,16 @@
+[
+  {
+    "username": "natgeo",
+    "full_name": "National Geographic",
+    "followers_count": 283000000,
+    "following_count": 150,
+    "bio": "Experience the world through the eyes of National Geographic photographers.",
+    "profile_url": "https://www.instagram.com/natgeo/",
+    "posts_count": 26000,
+    "engagement_rate": 2.5,
+    "is_verified": true,
+    "profile_image": "https://instagram.com/natgeo/profile.jpg",
+    "fetched_at": "2024-01-01T00:00:00Z",
+    "source": "example"
+  }
+]
