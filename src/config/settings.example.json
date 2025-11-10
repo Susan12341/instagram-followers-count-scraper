@@ -1,0 +1,11 @@
+{
+  "request": {
+    "timeout_seconds": 15,
+    "retries": 2,
+    "concurrency": 5,
+    "proxies": null,
+    "user_agent": null,
+    "delay_ms_min": 300,
+    "delay_ms_max": 900
+  }
+}
