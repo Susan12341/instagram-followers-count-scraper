@@ -1,0 +1,5 @@
+# One username per line. Lines starting with # are ignored.
+instagram
+natgeo
+nike
+nasa
